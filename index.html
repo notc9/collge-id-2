@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My College ID</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="id-card">
+
+    <div class="card-top">
+      <h2>St. Joseph's Degree & PG College</h2>
+    </div>
+
+    <div class="card-body">
+
+      <div class="photo-row">
+        <div class="photo-wrap">
+          <img id="studentPhoto" class="student-photo"
+            src="https://api.dicebear.com/7.x/initials/svg?seed=PJ&backgroundColor=e8e8e8&textColor=0d1117&fontSize=38"
+            alt="Photo" />
+          <button class="upload-btn" onclick="document.getElementById('photoInput').click()">+ Photo</button>
+          <input type="file" id="photoInput" accept="image/*" onchange="uploadPhoto(event)" />
+        </div>
+
+        <div>
+          <h1 class="student-name">abdul rahman</h1>
+          <span class="badge">BBA — IT</span>
+        </div>
+      </div>     
+      <div class="divider"></div>
+
+      <div class="detail-grid">
+        <div>
+          <div class="detail-label">Branch</div>
+          <div class="detail-value">BBA</div>
+        </div>
+        <div>
+          <div class="detail-label">2nd Year</div>
+          <div class="detail-value">nd Year</div>
+        </div>
+        <div>
+          <div class="detail-label">Specialization</div>
+          <div class="detail-value">Info. Technology</div>
+        </div>
+        <div>
+          <div class="detail-label">Batch</div>
+          <div class="detail-value">2023 – 2026</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-bottom">
+      <div>
+        <div class="detail-label">Roll Number</div>
+        <div class="roll-number">121424408024</div>
+        <div class="valid-text">Valid Till: May 2026</div>
+      </div>
+      <div class="qr-wrap">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=abdul-rahman-121424408024&bgcolor=f9fafb&color=0d1117&margin=4" alt="QR" />
+        <div class="qr-label">Scan to verify</div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="tag">Built at <span>Codera</span></p>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

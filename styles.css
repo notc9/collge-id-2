@@ -1,0 +1,162 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0f0f0f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.id-card {
+  width: 340px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+}
+
+/* ---- TOP STRIP ---- */
+.card-top {
+  background: #0d1117;
+  padding: 20px 24px;
+}
+
+.card-top h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.card-top p {
+  font-size: 10px;
+  color: #555;
+  margin-top: 3px;
+}
+
+/* ---- BODY ---- */
+.card-body { padding: 24px; }
+
+.photo-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.photo-wrap { position: relative; flex-shrink: 0; }
+
+.student-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 3px solid #f3f4f6;
+  display: block;
+}
+
+.upload-btn {
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d1117;
+  color: #4ade80;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#photoInput { display: none; }
+
+.student-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0d1117;
+  margin-bottom: 6px;
+}
+
+.badge {
+  background: #0d1117;
+  color: #4ade80;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 5px;
+}
+
+.divider { height: 1px; background: #f3f4f6; margin-bottom: 18px; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.detail-label {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 2px;
+}
+
+.detail-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ---- BOTTOM ---- */
+.card-bottom {
+  background: #f9fafb;
+  border-top: 1px solid #f3f4f6;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roll-number {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #0d1117;
+  margin-bottom: 3px;
+}
+
+.valid-text { font-size: 9px; color: #9ca3af; }
+
+.qr-wrap { text-align: center; }
+
+.qr-wrap img { width: 68px; height: 68px; border-radius: 8px; display: block; }
+
+.qr-label { font-size: 7px; color: #9ca3af; letter-spacing: 1px; text-transform: uppercase; margin-top: 5px; }
+
+/* ---- FOOTER TAG ---- */
+.tag {
+  font-family: 'Syne', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.tag span { color: #4ade80; }
